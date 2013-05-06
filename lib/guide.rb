@@ -46,11 +46,23 @@ end
     when 'find'
       puts "Finding...."
     when 'add'
-      puts "Adding...."
+      add
     when 'quit'
       return :quit
     else
       puts "\n I don't understand the command./n"
+    end
+  end
+
+  def add
+    puts "\n Add a Restaurant.\n\n".upcase
+    
+    restaurant = Restaurant.build_using_questions
+
+    if restaurant.save
+      puts "\nRestaurant Added.\n"
+    else
+      puts "\n Save error: Restaurant not added.\n"
     end
   end
 
