@@ -1,6 +1,6 @@
 class Guide
 
-  def initialize(path=nil)
+  def initialize(path = nil)
     Restaurant.filepath = path
     if Restaurant.file_exists?
        puts "Found Restaurant file."
