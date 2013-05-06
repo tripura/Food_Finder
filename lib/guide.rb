@@ -1,3 +1,4 @@
+require 'restaurant'
 class Guide
 
   def initialize(path = nil)
