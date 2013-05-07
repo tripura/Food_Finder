@@ -41,9 +41,8 @@ class Restaurant
   end
 
   def self.build_using_questions
- 
     args = {}
-   
+
     print "Restaurant name: "
     args[:name] = gets.chomp.strip
 
@@ -77,3 +76,4 @@ class Restaurant
   end
 
 end 
+
