@@ -7,3 +7,4 @@ require 'guide'
 guide = Guide.new('restaurants.txt')
 
 guide.launch!
+
